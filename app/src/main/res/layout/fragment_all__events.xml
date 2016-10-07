@@ -1,0 +1,161 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vinit.sicsreventdesertation.All_Events">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgAllEvent_Culture"
+                android:minHeight="150dp"
+                android:background="#3d1111"
+                android:src="@drawable/ganpati"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Culture "
+                android:id="@+id/txtAllEvent_Culture"
+                android:layout_below="@+id/imgAllEvent_Culture"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgAllEvent_Tech"
+                android:minHeight="150dp"
+                android:src="@drawable/ganpati"
+                android:adjustViewBounds="true"
+                android:background="#3d1111"
+                android:layout_below="@+id/txtAllEvent_Culture"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:layout_marginTop="10sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tech"
+                android:id="@+id/txtAllEvent_Tech"
+                android:layout_below="@+id/imgAllEvent_Tech"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgAllEvent_Guest"
+                android:minHeight="150dp"
+                android:background="#3d1111"
+                android:src="@drawable/ganpati"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/txtAllEvent_Tech"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Guest Lecture"
+                android:id="@+id/txtAllEvent_Guest"
+                android:layout_below="@+id/imgAllEvent_Guest"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgAllEvent_Sports"
+                android:minHeight="150dp"
+                android:background="#3d1111"
+                android:src="@drawable/ganpati"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/txtAllEvent_Guest"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Sports"
+                android:id="@+id/txtAllEvent_Sports"
+                android:layout_below="@+id/imgAllEvent_Sports"
+                android:layout_centerHorizontal="true"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgAllEvent_SocialService"
+                android:minHeight="150dp"
+                android:background="#3d1111"
+                android:src="@drawable/ganpati"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/txtAllEvent_Sports"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Social Service"
+                android:id="@+id/txtAllEvent_SocialService"
+                android:layout_below="@+id/imgAllEvent_SocialService"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgAllEvent__Miscellaneous"
+                android:minHeight="150dp"
+                android:background="#3d1111"
+                android:src="@drawable/ganpati"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/txtAllEvent_SocialService"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Miscellaneous"
+                android:id="@+id/txtAllEvent_Miscellaneous"
+                android:layout_below="@+id/imgAllEvent__Miscellaneous"
+                android:layout_centerHorizontal="true"
+                android:clickable="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

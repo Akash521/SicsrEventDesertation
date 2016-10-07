@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vinit.sicsreventdesertation.Specification">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55sp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Event Name"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/txtSpec_eventName" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220sp"
+                android:id="@+id/eventImage"
+                android:layout_marginTop="15dp"
+                android:background="#00000000"
+                android:layout_below="@+id/txtSpec_eventName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Description of Event"
+                android:id="@+id/descriptionEvent"
+                android:layout_below="@+id/eventImage"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="22dp"
+                android:layout_alignParentEnd="false" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/color"
+                android:layout_alignTop="@+id/TitleReview"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#edcfcf"
+                android:layout_alignRight="@+id/descriptionEvent"
+                android:layout_alignEnd="@+id/descriptionEvent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="  Review"
+                android:id="@+id/TitleReview"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/descriptionEvent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewImage"
+                android:src="@android:drawable/btn_star_big_on"
+                android:layout_alignTop="@+id/color"
+                android:layout_alignRight="@+id/color"
+                android:layout_alignEnd="@+id/color"
+                android:layout_alignBottom="@+id/color" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/comment1"
+                android:background="#edcfcf"
+                android:layout_below="@+id/color"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="22dp"
+                android:text="Comments to be viewed  Here" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/comment2"
+                android:background="#edcfcf"
+                android:layout_below="@+id/comment1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:text="Comments to be viewed  Here" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/comment3"
+                android:background="#edcfcf"
+                android:layout_below="@+id/comment2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:text="Comments to be viewed  Here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Attending:"
+                android:id="@+id/AttendingLable"
+                android:layout_alignTop="@+id/descriptionEvent"
+                android:layout_toRightOf="@+id/descriptionEvent"
+                android:layout_toEndOf="@+id/descriptionEvent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/AttendingNum1"
+                android:layout_alignBottom="@+id/AttendingLable"
+                android:layout_toRightOf="@+id/AttendingLable"
+                android:layout_alignRight="@+id/eventImage"
+                android:layout_alignEnd="@+id/eventImage"
+                android:text="  8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="R.S.V.P."
+                android:id="@+id/rsvpLable"
+                android:layout_alignBottom="@+id/descriptionEvent"
+                android:layout_toRightOf="@+id/reviewImage"
+                android:layout_toEndOf="@+id/reviewImage" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/like"
+                android:layout_below="@+id/color"
+                android:layout_toRightOf="@+id/color"
+                android:layout_toEndOf="@+id/color"
+                android:src="@drawable/ic_action_like" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:src="@drawable/ic_action_dontlike"
+                android:layout_alignTop="@+id/like"
+                android:layout_toRightOf="@+id/like"
+                android:layout_toEndOf="@+id/like" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

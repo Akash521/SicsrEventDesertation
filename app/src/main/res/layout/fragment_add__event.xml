@@ -1,0 +1,254 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.vinit.sicsreventdesertation.Add_Event">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55sp"
+        >
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="550dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220sp"
+                android:id="@+id/imgAddEvent"
+                android:src="@drawable/ganpati"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Name :"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/imgAddEvent"
+                android:id="@+id/txtAddEvent_Name"
+                android:textStyle="bold"
+                android:textSize="18sp"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etAddEvent_Name"
+                android:layout_below="@+id/imgAddEvent"
+                android:layout_toRightOf="@+id/txtAddEvent_Description"
+                android:layout_alignStart="@+id/etAddEvent_Date"
+                android:layout_marginLeft="15sp"
+                android:maxLines="1"
+                android:lines="1"
+                android:minLines="1"
+                android:layout_marginTop="15sp"
+                android:text="Gnunify"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Description :"
+                android:layout_below="@+id/etAddEvent_Name"
+                android:id="@+id/txtAddEvent_Description"
+                android:layout_alignTop="@+id/scrollView"
+                android:layout_alignParentStart="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etAddEvent_Description"
+                android:layout_toRightOf="@+id/txtAddEvent_Description"
+                android:layout_below="@+id/etAddEvent_Name"
+                android:layout_alignEnd="@+id/etAddEvent_Date"
+                android:layout_alignStart="@+id/etAddEvent_Date"
+                android:maxLines="4"
+                android:lines="4"
+                android:minLines="2"
+                android:layout_marginLeft="15sp"
+                android:gravity="top|left"
+                android:text="Hello \n Vinit"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Date :"
+                android:id="@+id/txtAddEvent_Date"
+                android:layout_below="@+id/etAddEvent_Description"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/etAddEvent_Date"
+                android:layout_marginLeft="15sp"
+                android:layout_alignTop="@+id/txtAddEvent_Date"
+                android:layout_toRightOf="@+id/txtAddEvent_Description"
+                android:layout_toEndOf="@+id/txtAddEvent_Name"
+                android:text="2016-09-16"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Time :"
+                android:id="@+id/txtAddEvent_Time"
+                android:layout_below="@+id/etAddEvent_Date"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/etAddEvent_Time"
+
+                android:layout_toRightOf="@+id/txtAddEvent_Description"
+                android:layout_below="@+id/etAddEvent_Date"
+                android:layout_alignLeft="@+id/etAddEvent_Date"
+                android:layout_alignStart="@+id/etAddEvent_Date"
+                android:text="10:00:00"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Venue :"
+                android:id="@+id/txtAddEvent_Venue"
+                android:layout_below="@+id/etAddEvent_Time"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etAddEvent_Venue"
+                android:maxLines="4"
+                android:lines="4"
+                android:minLines="2"
+                android:layout_marginLeft="15sp"
+                android:layout_below="@+id/etAddEvent_Time"
+                android:layout_toRightOf="@+id/txtAddEvent_Description"
+                android:layout_alignStart="@+id/etAddEvent_Time"
+                android:text="pune"
+                android:gravity="top|left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Category :"
+                android:id="@+id/txtAddEvent_Category"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/etAddEvent_Venue"
+                />
+
+            <Spinner
+                android:id="@+id/static_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/txtAddEvent_Description"
+                android:layout_alignTop="@+id/txtAddEvent_Category"
+                android:layout_alignStart="@+id/etAddEvent_Venue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Registration :"
+                android:id="@+id/txtAddEvent_Registration"
+                android:layout_below="@+id/static_spinner"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5sp"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/static_spinner"
+                android:layout_alignStart="@+id/static_spinner"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/txtAddEvent_Description"
+                android:id="@+id/radioGroup">
+                <RadioButton
+                    android:layout_width="227dp"
+                    android:layout_height="wrap_content"
+                    android:text="Free"
+                    android:id="@+id/rbAddEvent_Free"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid"
+                    android:id="@+id/rbAddEvent_Paid"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/etAddEvent_Paid"
+                android:text="120"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@+id/txtAddEvent_Description"
+                android:layout_toStartOf="@+id/txtAddEvent_Venue"
+                android:layout_toEndOf="@+id/txtAddEvent_Venue" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Upload Event"
+                android:id="@+id/btnAddEvent"
+                android:layout_below="@+id/etAddEvent_Paid"
+                android:gravity="center"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
